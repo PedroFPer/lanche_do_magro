@@ -14,7 +14,7 @@ public class LancheDto {
         this.precoProd = precoProd;
         this.urlImag = urlImag;
 
-        UtilTools.salvarFiles(urlImag);
+        UtilTools.salvarFiles(nomeProd, urlImag);
     }
 
     public String getCodigProd() {

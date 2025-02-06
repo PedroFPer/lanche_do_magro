@@ -7,8 +7,8 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 
 public class UtilTools {
-    public static void salvarFiles(String caminhoOrigem){
-        String caminhoDestino = "C:/Users/Pichau/Downloads/lanche.jpg";
+    public static void salvarFiles(String nomeImagem, String caminhoOrigem){
+        String caminhoDestino = "C:/Users/Pichau/Downloads/" + nomeImagem + ".jpg" ;
         try{
             Path origem = Path.of(caminhoOrigem);
             Path destino = Path.of(caminhoDestino);
